@@ -5,5 +5,7 @@ I'm not playing for the main leaderboard but I am participating in CompSoc's pri
 
 [Advent of Code can be found here](https://adventofcode.com/)
 
-## Languages used so far
-- Python (day one)
+## Running
+`cargo build` and then run it giving it your COOKIE and then the day in which you want to run like "./target/debug/advent_of_code_2022 <cookie> <day>".
+
+Thank you arty for the code for downloading each days task.
