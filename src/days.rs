@@ -24,18 +24,14 @@ pub fn day_one(token: String) {
         }
         sum_vector.push(sum);
     }
-
-    let mut max = 0;
     let mut cloned = sum_vector.clone();
-    for calorie_total in sum_vector {
-        if calorie_total >= max {
-            max = calorie_total;
-        }
-    }
+    let max = sum_vector.iter().max().unwrap();
 
     println!("Part One Solution: {}", max);
+    
     cloned.sort();
     let sum: i32 = cloned.iter().rev().take(3).sum();
+    
     println!("Part Two Solution: {}", sum);
     println!("==============");
 }
