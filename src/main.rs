@@ -14,6 +14,7 @@ fn main() {
     // Day one
     match day {
         1 => days::day_one(cookie.to_string()),
+        2 => days::day_two(cookie.to_string()),
         _ => days::day_all(cookie.to_string())
     }
 }
